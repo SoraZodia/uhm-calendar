@@ -8,6 +8,9 @@
       <h3>Description:</h3>
       <div class="field"><textarea rows=10 class="ui input" type=text></textarea></div>
 
+      <h3>Tag(s):</h3>
+      {{> Select_Form_Control label="" multiple=true options=getTags}}
+
       <button class="ui primary button">Update</button>
 
     </form>

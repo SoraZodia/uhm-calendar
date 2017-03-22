@@ -3,3 +3,7 @@ body {
   margin-top: 25px;
   background: url('/images/background.jpg') center center fixed;
 }
+
+.ui.top.fixed.borderless.inverted.menu {
+  background-color: #D8B98E;
+}
