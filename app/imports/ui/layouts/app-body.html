@@ -1,4 +1,6 @@
 <template name="App_Body">
-  {{> Header}}
+  {{#if isNotActive "Landing_Page" }}
+    {{> Header}}
+  {{/if}}
   {{>Template.dynamic template=main}}
 </template>

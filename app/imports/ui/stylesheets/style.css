@@ -1,4 +1,5 @@
 body {
   padding-top: 61px;  /* Move body of page below navbar. */
   margin-top: 25px;
+  background: url('/images/background.jpg') center center fixed;
 }

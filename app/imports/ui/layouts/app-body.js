@@ -1,11 +1,15 @@
 import { Template } from 'meteor/templating';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 Template.App_Body.onCreated(function appBodyOnCreated() {
   // placeholder: typically you will put global subscriptions here if you remove the autopublish package.
 });
 
 Template.App_Body.helpers({
-  // placeholder: if you display dynamic data in your layout, you will put your template helpers here.
+  isNotActive: function isRouteActive(route) {
+    return FlowRouter.current().route.name !== route;
+  },
+
 });
 
 Template.App_Body.events({
