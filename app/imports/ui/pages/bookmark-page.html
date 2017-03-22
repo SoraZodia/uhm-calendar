@@ -1,0 +1,50 @@
+<template name="Bookmark_Page">
+
+  <div style="margin-top: -10px" class="ui left floated vertical menu container">
+    <div class="item">
+      <div class="ui transparent icon input">
+        <input type="text" placeholder="Search posts...">
+        <i class="search icon"></i>
+      </div>
+      <div class="ui divider"></div>
+    </div>
+
+    <form class="ui form student-data-form item">
+      <p class="text"><b>Filters:</b></p>
+      {{> Checkbox_Field label="Jobs"}}
+      {{> Checkbox_Field label="Events"}}
+      {{> Checkbox_Field label="Meetups"}}
+      {{> Checkbox_Field label="Important Notices"}}
+    </form>
+
+  </div>
+
+  <div class="ui middle aligned centered grid container">
+    <div class="column">
+      <div class="ui segment">
+        <button class="ui left floated yellow button">
+          <i class="empty star icon"></i>
+        </button>
+        <h2>The Elder Scrolls IV</h2>
+        <p>The Elder Scrolls IV: Oblivion is an action role-playing video game developed by Bethesda Game Studios and
+          published by Bethesda Softworks and the Take-Two Interactive division 2K Games. Oblivion was released on
+          March
+          20, 2006, for Microsoft Windows and Xbox 360, and later for mobile phones and PlayStation 3. In the main
+          storyline, the player character thwarts the fanatical Mythic Dawn cult from opening the gates to a realm
+          called Oblivion. The player can travel anywhere in the game world at any time, develop the character's
+          skills,
+          and ignore or postpone the main storyline indefinitely. The graphics were designed with an improved Havok
+          physics engine, high dynamic range lighting, and procedural content generation tools to generate terrain.
+          The
+          Radiant A.I. system manages the complex behaviors of the non-player characters (NPCs). The game features the
+          music of award-winning composer Jeremy Soule. Overall, Oblivion has been successful both commercially and
+          critically, winning industry and publication awards. It was praised for its graphics, expansive game world,
+          and fully voiced, schedule-driven NPCs. </p>
+        <div class="ui small tag labels">
+          <div class="ui label">Events</div>
+          <div class="ui label">Jobs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

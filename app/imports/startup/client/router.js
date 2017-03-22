@@ -15,6 +15,13 @@ FlowRouter.route('/home', {
   },
 });
 
+FlowRouter.route('/favorites', {
+  name: 'Bookmark_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Bookmark_Page' });
+  },
+});
+
 FlowRouter.route('/login', {
   name: 'Login_Page',
   action() {

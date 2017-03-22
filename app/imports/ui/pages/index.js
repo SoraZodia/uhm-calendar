@@ -11,3 +11,6 @@ import './add-page.js';
 
 import './edit-page.html';
 import './edit-page.js';
+
+import './bookmark-page.html';
+import './bookmark-page.js';
